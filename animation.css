@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+ --gap-:60px;
+ --col-:3;
+}
+.logo{
+    width: 60%;
+    position: absolute;
+   left: 20%;
+   bottom: 20%;
+   animation: car 3s infinite alternate;
+    
+}
+.container{
+    width: 1600px;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.backgorund{
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+   background-position:center;
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+}
+.container{
+    width: 1800px;
+    max-width: 90%;
+    margin: 0 auto;
+   position: relative;
+   
+   .container i:nth-of-type(2){
+       font-size: 25px;
+       position: absolute;
+       top: 50%;
+       right: 5%;
+       
+       
+    }  
+    .container h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .photos{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--gap-);
+        justify-content: center;
+        position: relative;
+        
+        
+        
+        
+        
+    }
+    .photo{
+        
+        width: calc( 100%/var(--col-) - var(--gap-)*2);
+   
+   background-color: beige;
+    overflow: hidden;
+    
+    
+    
+    
+}
+.photo img{
+     transition: 1s ease; 
+}
+
+.photo:hover img{
+  transform: scale(1.05);
+
+ 
+
+}
+.bas{
+    display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   
+}
+.photo p{
+    color: rgb(9, 161, 111);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bas h3 {
+    color: rgb(32, 9, 161);
+    font-size: 15px;
+    font-weight: bold;
+}
+span{
+    padding-left: 10px;
+    color: blue;
+}
+.photo p{
+    padding-left: 50px;
+}
+.photo img{
+    width: 100%;
+}
+
+
+
+}
+.container i:nth-of-type(1){
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size: 25px;
+   
+
+}
+@keyframes car {
+    from{
+        transform: translateX(40px);
+
+    }
+    to{
+        transform: translateX(-40px);
+    }
+}
